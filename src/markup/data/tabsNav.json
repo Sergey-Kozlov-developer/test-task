@@ -1,0 +1,32 @@
+[
+    {
+        "title": "All",
+        "link": "",
+        "badge": 17
+    },
+    {
+        "title": "Marketing",
+        "link": "",
+        "badge": 4
+    },
+    {
+        "title": "Management",
+        "link": "",
+        "badge": 3
+    },
+    {
+        "title": "HR & Recruting",
+        "link": "",
+        "badge": 5
+    },
+    {
+        "title": "Design",
+        "link": "",
+        "badge": 2
+    },
+    {
+        "title": "Development",
+        "link": "",
+        "badge": 3
+    }
+]

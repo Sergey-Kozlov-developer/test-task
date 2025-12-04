@@ -1,0 +1,25 @@
+extends ../layouts/_default.pug
+
+block variables
+    - const pageTitle = "Test Task";
+    - const pageDescription = "Верстка на сборке Gulp";
+    - const pageLink = "";
+
+block content 
+    section.tabs.container(data-js-tabs) 
+
+        .tabs__menu 
+            .tabs__menu-list(data-js-tabs-list)
+                each item, index in jsonData.tabsNav
+                    if tabActive == item.link 
+                        button.tabs__menu-btn.is-active(data-js-tabs-btn) 
+                            span.tabs__menu-badge #{item.badge}
+                            p.tabs__menu-title #{item.title} 
+                    else 
+                        button.tabs__menu-btn(data-js-tabs-btn) 
+                            span.tabs__menu-badge #{item.badge}
+                            p.tabs__menu-title #{item.title} 
+            
+            input.tabs__menu-input(type="text")(placeholder="Search course...") 
+            +icon('icon-search')(width='14', height='14')
+

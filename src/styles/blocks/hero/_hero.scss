@@ -1,0 +1,61 @@
+@use '../../base/helpers' as *;
+
+.tabs {
+    margin-top: rem(85);
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-list {
+            display: flex;
+            gap: rem(12); // для отступов между кнопками
+        }
+
+        &-btn {
+            position: relative;
+            transition: color 0.3s ease; // плавный переход
+            border: none;
+            background-color: transparent;
+            color: var(--color-gray-600);
+            // padding: rem(10) rem(20);
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &.is-active {
+                color: red;
+                cursor: pointer;
+
+                border: var(--border);
+                border-radius: rem(4);
+                color: var(--color-primary);
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        &-badge {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            font-size: rem(10);
+            // color: red;
+        }
+        &-title {
+            font-size: rem(16);
+            padding: rem(10) rem(20);
+        }
+
+        &-input {
+            font-size: rem(14);
+            color: var(--color-gray-600);
+            padding: rem(12) rem(16);
+            border: var(--border-input);
+            border-radius: rem(4);
+            padding-right: rem(20);
+        }
+    }
+}
