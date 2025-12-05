@@ -20,6 +20,7 @@ block content
                             span.tabs__menu-badge #{item.badge}
                             p.tabs__menu-title #{item.title} 
             
-            input.tabs__menu-input(type="text")(placeholder="Search course...") 
-            +icon('icon-search')(width='14', height='14')
+            .tabs__menu-search 
+                input.tabs__menu-input(type="text")(placeholder="Search course...") 
+                +icon('icon-search')(width='14', height='14')
 

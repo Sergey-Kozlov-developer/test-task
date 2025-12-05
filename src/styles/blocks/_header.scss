@@ -5,14 +5,19 @@
     &__description {
         padding-block: rem(20);
         text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: rem(8);
 
         &-subtitle {
             font-size: rem(16);
-            color: black;
+            color: var(--color-gray-900);
         }
         &-title {
             font-size: rem(46);
-            color: black;
+            color: var(--color-gray-900);
         }
     }
 }
