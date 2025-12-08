@@ -21,7 +21,7 @@ block content
                             p.tabs__menu-title #{item.title} 
             
             .tabs__menu-search 
-                input.tabs__menu-input(type="text")(placeholder="Search course...") 
+                input.tabs__menu-input#searchInput(type="text")(data-search)(placeholder="Search course...") 
                 +icon('icon-search')(width='14', height='14')
 
     section.cards.container 

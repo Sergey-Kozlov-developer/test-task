@@ -4,5 +4,7 @@ import '../../modernizr.js'
 
 // new Button()
 import Tabs from './Tabs.js'
+import CardSearch from './CardSearch.js'
 
 new Tabs()
+new CardSearch()
