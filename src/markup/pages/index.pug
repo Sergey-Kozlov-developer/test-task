@@ -16,7 +16,7 @@ block content
                             span.tabs__menu-badge #{item.badge}
                             p.tabs__menu-title #{item.title} 
                     else 
-                        button.tabs__menu-btn(data-js-tabs-btn) 
+                        button.tabs__menu-btn(data-js-tabs-btn data-filter=item.title.toLowerCase()) 
                             span.tabs__menu-badge #{item.badge}
                             p.tabs__menu-title #{item.title} 
             
@@ -36,7 +36,7 @@ block content
             +card(
             "../img/people/people2.png",
             "Management",
-            "Prduct Management Fundamentals",
+            "Product Management Fundamentals",
             480,
             "Marvin McKinney"
         )

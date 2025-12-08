@@ -10,11 +10,11 @@ mixin card(image, badge, title, price, speaker)
             "Development": "#7772F1"
             //- "All": "#787a80"
         }
-        
+
         const bgColor = colors[badge] || colors["HR & Recruiting"]
-        //- const textColor = badge === "HR & Recruiting" ? "#1e212c" : "#fff"
+        const dataCategory = badge.toLowerCase()
     
-    .card
+    .card(data-category=dataCategory)
         img.card__image(src=image, alt=title loading="lazy")
         .card__content 
             button.card__button(
