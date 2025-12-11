@@ -7,13 +7,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        @include tablet {
+            flex-direction: column;
+        }
 
         &-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             gap: rem(12);
+            @include tablet {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @include mobile {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         &-btn {
@@ -54,6 +65,9 @@
 
         &-search {
             position: relative;
+            @include tablet {
+                margin-top: rem(20);
+            }
         }
         &-input {
             width: rem(315);

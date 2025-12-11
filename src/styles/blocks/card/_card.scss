@@ -3,6 +3,7 @@
 .cards {
     margin-top: rem(60);
     padding-bottom: rem(40);
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -17,7 +18,10 @@
     }
 }
 .card {
-    box-shadow: rem(15) rem(15) rem(15) rem(-10) var(--color-gray-300);
+    // background-color: white;
+
+    // box-shadow: rem(15) rem(15) rem(15) rem(-10) var(--color-gray-300);
+    box-shadow: var(--box-shadow);
     &__image {
         @include tablet {
             width: 100%;
